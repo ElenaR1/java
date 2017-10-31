@@ -92,3 +92,33 @@ public class Apples {
 }
 
 
+
+//EDIT
+
+public class Tuna  {
+	private String first;
+	private String last;
+	private static int numOfmembers=0;//every object shares the same variable. When this one changes, it changes all objects
+	public Tuna (String fn,String ln) {
+		first=fn;
+		last=ln;
+		numOfmembers++;
+		System.out.printf("Constructor for %s %s, members in the club: %d \n",first, last, numOfmembers);
+		
+	}
+	
+}
+
+
+public class Apples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//testEnum.values()- a built in array of the contants in testEnum-{bucky,kelsey,julia}
+	Tuna mem1=new Tuna("Natalie", "Portman");//natalie has her own first and last name
+	Tuna mem2=new Tuna("Julia", "Roberts");//but they all share the number of members in the club
+	Tuna mem3=new Tuna("Taylor", "Swift");
+	}
+
+}
+
