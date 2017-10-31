@@ -13,12 +13,42 @@ public class potpie  {
 		System.out.printf("the constructor of this is %s\n ",this);// we have a reference to an obj it needs sth in the string 
 		//format and it looks in the method toString
 	}
-	public String toString()//any time u need a  string representation of an obj
+	public String toString()//the toString method is a string representation of an obj
 	{
 		return String.format("%d/%d/%d", day,month,year);
 	}
 }
+
+
+
+public class Tuna  {
+	private String name;
+	private potpie birthday;//a reference to a poptpie obj
+	
+	public Tuna(String theName, potpie theDate)
+	{
+		name=theName;
+		birthday=theDate;
+	}
+	
+	public String toString()//the toString method is a string representation of an obj
+	{
+		return String.format("My name is %s, my birthday is %s", name,birthday);
+		//here for the birtday it goes to the toString method in potpie
+	}
+	
+}
+
+
+public class Apples {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		potpie pot=new potpie(4, 22, 2000);
+		System.out.println(pot);
+		Tuna tunaObj=new Tuna("Greg",pot);
+		System.out.println(tunaObj);
 	}
+
+}
+
