@@ -93,7 +93,7 @@ public class Apples {
 
 
 
-//EDIT
+//STATIC
 
 public class Tuna  {
 	private String first;
