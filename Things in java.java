@@ -52,3 +52,43 @@ public class Apples {
 
 }
 
+
+
+
+//ENUM
+
+public enum testEnum {
+	bucky("nice","22"),
+	kelsey("cutie","10"),
+	julia("bigmistake","12");
+	
+	private final String description;
+	private final String age;
+	
+	//enumeration constructor
+	testEnum(String desc,String ag){
+		description=desc;//for bucky for the description we pass nice
+		age=ag;//and for the age we pass ag
+	}
+	public String getDesc(){
+		return description;
+	}
+	public String getAge(){
+		return age;
+	}
+}
+
+
+public class Apples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//testEnum.values()- a built in array of the contants in testEnum-{bucky,kelsey,julia}
+		for(testEnum people:testEnum.values()) {//people=i;
+			System.out.printf("%s \t %s \t%s \n",people,people.getDesc(),people.getAge());
+		}
+		}
+
+}
+
+
