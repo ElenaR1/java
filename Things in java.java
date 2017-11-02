@@ -132,3 +132,35 @@ public class Apples {
 
 }
 
+
+//FINAL
+
+public class Tuna  {
+	private int sum;
+	private final int NUM;//final means that you can't modify the variable no matter what.
+	//we can only set it equals to sth once. I should set it equal to sth here or in the constructor
+	
+	public Tuna(int x) {
+		NUM=x;
+	}
+	
+	public void add() {
+		sum +=NUM;//sum can change
+	}
+	public String toString() {
+		return String.format("sum = %d \n", sum);
+	}
+}
+
+public class Apples {
+
+	public static void main(String[] args) {
+		Tuna obj=new Tuna(10);
+		for(int i=0; i<5; i++)
+		{
+			obj.add();
+			System.out.printf("%s",obj);//10,30,30,30,50
+		}
+
+}}
+
