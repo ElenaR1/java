@@ -106,6 +106,10 @@ public class Tuna  {
 		System.out.printf("Constructor for %s %s, members in the club: %d \n",first, last, numOfmembers);
 		
 	}
+	public static int getNumOfMembers()
+	{
+		return numOfmembers;
+	}
 	
 }
 
@@ -118,6 +122,12 @@ public class Apples {
 	Tuna mem1=new Tuna("Natalie", "Portman");//natalie has her own first and last name
 	Tuna mem2=new Tuna("Julia", "Roberts");//but they all share the number of members in the club
 	Tuna mem3=new Tuna("Taylor", "Swift");
+		
+	System.out.println(mem2.getNumOfMembers());//3 IT'S ALWAYS THE SAME CAUSE THE STATIC VAR IS SAHRED 
+	//AMONG ALL OBJECTS from the class
+	System.out.println(mem1.getNumOfMembers());//3
+	System.out.println(Tuna.getNumOfMembers());//3 when i have static variables i don't need to put an pbject
+	//when i'm calling the method i can use the class name
 	}
 
 }
