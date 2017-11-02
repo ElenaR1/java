@@ -164,3 +164,33 @@ public class Apples {
 
 }}
 
+//EXCEPTIONS
+import java.util.*;
+public class Apples {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int x=1;
+		do {
+		try//if we have an error anywhere in the try block we want to catch it
+		{
+		System.out.println("enter 1st num: ");
+		int n1=input.nextInt();
+		System.out.println("enter 2nd num: ");
+		int n2=input.nextInt();
+		int sum=n1/n2;//the error happens here so if n2=0 the program will not 
+		//go down to x=2 but it will go to the catch block
+		System.out.println(sum);
+		x=2;//we run the program over and over again
+		//until we get the right input
+		}
+		//we wnt to catch all errors
+		catch(Exception e){
+			System.out.println("You can't do that");
+		}
+		}while(x==1);
+		//if we write 12 2 the program will never go in the catch block
+		//12 0 it will print-you can't do that
+	} 
+}
+
