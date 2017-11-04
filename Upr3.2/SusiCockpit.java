@@ -189,7 +189,7 @@ public static void main(String[] args) {
 	
 	try {
 		System.out.println("Pesho's credits in required projects: ");
-		System.out.println(obj.getCreditsPerType(Pesho,REQUIRED));
+		System.out.println(obj.getCreditsPerType(Pesho,CourseType.REQUIRED));
 	} catch (StudentNotFoundException e1) {
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
