@@ -168,7 +168,7 @@ public class Student implements User {
 	public double creditsPerType(CourseType type) {
 		double sum=0;
 		for( int i=0;i<numOfCourses;i++) {
-			if(courses[i]!=null ) {
+			if(courses[i]!=null && courses[i].getType().equals(type)) {
 				System.out.println("lal");
 				sum+=courses[i].getCredit();
 			}
