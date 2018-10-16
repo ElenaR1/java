@@ -159,7 +159,7 @@ public class Apples {
 		for(int i=0; i<5; i++)
 		{
 			obj.add();
-			System.out.printf("%s",obj);//10,30,30,30,50
+			System.out.printf("%s",obj);//10,20,30,40,50
 		}
 
 }}
