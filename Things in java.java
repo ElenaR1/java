@@ -209,13 +209,13 @@ public class HashFunction {
 	HashFunction(int size){
 		arraySize=size;
 		theArray=new String[size];
-		Arrays.fill(theArray, "-1");
+		Arrays.fill(theArray, "-1");//makes all elements in theArray equal to "-1"
 	}
-	
+	//parseInt("3") =3 . Pravi string-a v integer
 	public void hashFunction1(String[] stringsForArray,String[] theArray) {
 		for(int n=0; n<stringsForArray.length;n++) {
 			String newElementVal=stringsForArray[n];
-			theArray[Integer.parseInt(newElementVal)]=newElementVal;//ako newElementVal="2" -> na poziciq 2 shte e elementa "2"
+			theArray[Integer.parseInt(newElementVal)]=newElementVal;//ako newElementVal="2" -> na poziciq 2 shte e elementa"2""
 		}
 	}
 	
