@@ -4,6 +4,7 @@ public class ReverseString {
 	public ReverseString() {
 		
 	}
+	//n^3
 	public int countTriplets(int arr[], int sum) {
 		int count=0;
 		
@@ -20,6 +21,7 @@ public class ReverseString {
 		
 		return count;
 	}
+	//n^2
 	public int countTriplets2(int arr[], int sum) {
 		int n=arr.length;
 		// Sort input array 
