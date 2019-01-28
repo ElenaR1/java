@@ -119,8 +119,9 @@ public class ReverseString {
 		ReverseString obj=new ReverseString();
 		obj.zigZag(arr);
 		obj.zigZag(arr0);
-		obj.zigZag(arr1);
-		obj.zigZag2(arr3);
+		obj.zigZag(arr1);//1 3 2 6 4 8 7 
+		obj.zigZag2(arr3);//[3, 7, 4, 8, 2, 6, 1]
+
 		
 		//obj.bubbleSort(arr2);
 		//obj.printVector(arr2);//1 2 4 5 8 
