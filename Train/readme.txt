@@ -47,3 +47,26 @@ A Simple Solution is to first sort the array. After sorting, exclude the first e
 
 We can convert in O(n) time using an Efficient Approach. The idea is to use modified one pass of bubble sort. Maintain a flag for representing which order(i.e. < or >) currently we need. If the current two elements are not in that order then swap those elements otherwise not.
 Let us see the main logic using three consecutive elements A, B, C. Suppose we are processing B and C currently and the current relation is ‘<'. But we have B > C. Since current relation is ‘<' previous relation must be '>‘ i.e., A must be greater than B. So, the relation is A > B and B > C. We can deduce A > C. So if we swap B and C then the relation is A > C and C < B. Finally we get the desired order A C B
+
+AllPossibleSortedArrays
+https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/
+Generate all possible sorted arrays from alternate elements of two given sorted arrays
+Given two sorted arrays A and B, generate all possible arrays such that first element is taken from A then from B then from A and so on in increasing order till the arrays exhausted. The generated arrays should end with an element from B.
+
+For Example
+
+ 
+A = {10, 15, 25}
+B = {1, 5, 20, 30}
+
+The resulting arrays are:
+  10 20
+  10 20 25 30
+  10 30
+  15 20
+  15 20 25 30
+  15 30
+  25 30
+We strongly recommend you to minimize your browser and try this yourself first.
+
+The idea is to use recursion. In the recursive function, a flag is passed to indicate whether current element in output should be taken from ‘A’ or ‘B’. Below is C++ implementation.
