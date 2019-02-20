@@ -81,30 +81,6 @@ public class Forms {
 			return true;
 	}
 
-	public boolean above(String configs[]) {
-		for (int i = 0; i < configs.length; i++) {
-			if (configs[i].charAt(1) == 'A')
-				return true;
-		}
-		return false;
-	}
-
-	public boolean left(String configs[]) {
-		for (int i = 0; i < configs.length; i++) {
-			if (configs[i].charAt(1) == 'L')
-				return true;
-		}
-		return false;
-	}
-
-	public boolean right(String configs[]) {
-		for (int i = 0; i < configs.length; i++) {
-			if (configs[i].charAt(1) == 'R')
-				return true;
-		}
-		return false;
-	}
-
 	public boolean isAbove(String s) {
 		if (s.charAt(1) == 'A')
 			return true;
