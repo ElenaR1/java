@@ -1,2 +1,2 @@
 # java
-bhbhh
+Java course in FMI
